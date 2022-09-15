@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  transition: 2s ease-in-out;
+}
+body header {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  overflow: hidden;
+}
+body header .intro h1 {
+  font-size: 5rem;
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  -webkit-animation: typewriter 4s steps(25) 1s 1 normal both, blinkTextCursor 500ms steps(25) infinite normal;
+          animation: typewriter 4s steps(25) 1s 1 normal both, blinkTextCursor 500ms steps(25) infinite normal;
+}
+body header button {
+  opacity: 0;
+  padding: 10px 20px;
+  -webkit-animation: enter 2s ease-in-out normal both;
+          animation: enter 2s ease-in-out normal both;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+body main {
+  height: 100vh;
+}
+body main #search {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+body main #search .item {
+  transition: 2s ease-in-out;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #search .item:hover {
+  cursor: zoom-in;
+}
+body main #search .item2 {
+  grid-area: 4/2/10/12;
+  margin: auto;
+  flex-direction: column;
+  font-size: 6rem;
+}
+body main #search .item2 p {
+  text-align: center;
+}
+body main #search .item3 {
+  grid-area: 2/5/3/9;
+  font-size: 3rem;
+  opacity: 0;
+}
+body main #search .item3:hover {
+  opacity: 1;
+}
+body main #search .item4 {
+  grid-area: 3/2/5/5;
+  font-size: 2rem;
+  opacity: 0;
+}
+body main #search .item4:hover {
+  opacity: 1;
+}
+body main #search .item5 {
+  grid-area: 4/6/5/10;
+  font-size: 3rem;
+  opacity: 0;
+}
+body main #search .item5:hover {
+  opacity: 1;
+}
+body main #search .item6 {
+  grid-area: 9/5/11/9;
+  font-size: 2rem;
+  opacity: 0;
+  text-align: center;
+}
+body main #search .item6:hover {
+  opacity: 1;
+}
+body main #search .item7 {
+  grid-area: 8/1/10/3;
+  font-size: 3rem;
+  opacity: 0;
+  text-align: center;
+}
+body main #search .item7:hover {
+  opacity: 1;
+}
+body main #search .item8 {
+  grid-area: 8/10/9/13;
+  font-size: 3rem;
+  opacity: 0;
+  text-align: center;
+}
+body main #search .item8:hover {
+  opacity: 1;
+}
+body main #search .item9 {
+  grid-area: 3/10/4/13;
+  font-size: 3rem;
+  opacity: 0;
+}
+body main #search .item9:hover {
+  opacity: 1;
+}
+body main #search .item10 {
+  grid-area: 10/10/12/12;
+  font-size: 3rem;
+  opacity: 0;
+  text-align: center;
+}
+body main #search .item10:hover {
+  opacity: 1;
+}
+body main #search .item11 {
+  grid-area: 10/2/12/5;
+  font-size: 2rem;
+  opacity: 0;
+  text-align: center;
+}
+body main #search .item11:hover {
+  opacity: 1;
+}
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10.6em;
+  }
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10.6em;
+  }
+}
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+@-webkit-keyframes enter {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes enter {
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
