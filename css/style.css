@@ -34,13 +34,21 @@ body header .intro h1 {
   -webkit-animation: typewriter 4s steps(25) 1s 1 normal both, blinkTextCursor 500ms steps(25) infinite normal;
           animation: typewriter 4s steps(25) 1s 1 normal both, blinkTextCursor 500ms steps(25) infinite normal;
 }
-body header button {
+body header a {
   opacity: 0;
   padding: 10px 20px;
+  font-size: 2rem;
+  background-color: none;
+  color: white;
+  text-decoration: none;
   -webkit-animation: enter 2s ease-in-out normal both;
           animation: enter 2s ease-in-out normal both;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
+}
+body header a:visited {
+  color: white;
+  text-decoration: none;
 }
 body main {
   height: 100vh;
@@ -51,6 +59,12 @@ body main #search {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   background-color: white;
+}
+body main #search:hover a {
+  -webkit-animation: enter 2s ease-in-out normal both;
+          animation: enter 2s ease-in-out normal both;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 body main #search .item {
   transition: 2s ease-in-out;
@@ -153,20 +167,35 @@ body main #search .item12 {
   font-size: 2rem;
   text-align: center;
 }
-body main #search .item12 button {
+body main #search .item12 a {
   opacity: 0;
   padding: 10px 20px;
+  font-size: 2rem;
+  background-color: none;
+  color: black;
+  text-decoration: none;
   -webkit-animation: enter 2s ease-in-out normal both;
           animation: enter 2s ease-in-out normal both;
-  -webkit-animation-delay: 20s;
-          animation-delay: 20s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+body main #search .item12 a:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 2px 2px 4px gray;
+}
+body main #search .item12 a:hover:visited {
+  color: white;
+}
+body main #search .item12 a:visited {
+  color: black;
+  text-decoration: none;
 }
 body main #skills {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right bottom, #f9f871, #e2b659, #b87c4c, #7f4d3e, #412728, #7f4d3e, #b87c4c, #e2b659, #f9f871);
 }
 body main #skills .wrapper {
   background: #171717;
@@ -177,7 +206,7 @@ body main #skills .wrapper {
   min-height: calc(100vh - 16px);
   min-width: calc(100% - 16px);
 }
-body main #skills .wrapper:hover button {
+body main #skills .wrapper:hover a {
   -webkit-animation: enter 2s ease-in-out normal both;
           animation: enter 2s ease-in-out normal both;
   -webkit-animation-delay: 5s;
@@ -197,70 +226,56 @@ body main #skills .wrapper .mirror {
 body main #skills .wrapper .skills1 {
   display: flex;
   justify-content: space-evenly;
+  color: transparent;
   font-size: 1.2rem;
   gap: 50%;
 }
 body main #skills .wrapper .skills1 i:hover {
   transform: scale(1.2);
+  color: white;
 }
 body main #skills .wrapper button {
   opacity: 0;
   padding: 10px 20px;
 }
+body main #skills .wrapper a {
+  opacity: 0;
+  padding: 10px 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: none;
+  color: black;
+  text-decoration: none;
+  -webkit-animation: enter 2s ease-in-out normal both;
+          animation: enter 2s ease-in-out normal both;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+body main #skills .wrapper a:hover {
+  color: white;
+  box-shadow: 2px 2px 4px gray;
+}
+body main #skills .wrapper a:hover:visited {
+  color: white;
+}
+body main #skills .wrapper a:visited {
+  color: black;
+  text-decoration: none;
+}
 body main #projects {
   height: 100vh;
-  background: linear-gradient(to bottom, #f9f871, #e2b659, #b87c4c, #7f4d3e, #412728);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-body main #projects .slider {
-  width: 100%;
-  width: 80vw;
-  height: 70vh;
-  margin: 20px;
-  text-align: center;
-  border-radius: 20px;
-  overflow: hidden;
-  position: relative;
-}
-body main #projects .slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  width: 80vw;
-  height: 80vh;
-  scroll-snap-align: center;
-  margin-right: 0px;
-  box-sizing: border-box;
-  background: white;
-  transform-origin: center center;
-  transform: scale(1);
-}
-body main #projects .slider__nav {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  width: 200px;
-  margin-left: -100px;
-  text-align: center;
-}
-body main #projects .slider__navlink {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
   background-color: black;
-  margin: 0 10px 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 2rem;
 }
-body main #projects .tindog {
-  width: 80vw;
-  height: 80vh;
-  box-shadow: 5px 5px 20px 5px black;
-  border-radius: 40px;
+body main #projects .wrapper {
+  background-color: white;
+  width: calc(100vw - 16px);
+  height: calc(100vh - 16px);
+  display: grid;
 }
 
 @-webkit-keyframes typewriter {

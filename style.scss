@@ -35,11 +35,19 @@ body {
           blinkTextCursor 500ms steps(25) infinite normal;
       }
     }
-    button {
+    a {
       opacity: 0;
       padding: 10px 20px;
+      font-size: 2rem;
+      background-color: none;
+      color: white;
+      text-decoration: none;
       animation: enter 2s ease-in-out normal both;
       animation-delay: 5s;
+      &:visited {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
   main {
@@ -51,6 +59,12 @@ body {
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(12, 1fr);
       background-color: white;
+      &:hover {
+        a {
+          animation: enter 2s ease-in-out normal both;
+          animation-delay: 5s;
+        }
+      }
 
       .item {
         transition: 2s ease-in-out;
@@ -153,11 +167,27 @@ body {
         grid-area: 12/6/13/8;
         font-size: 2rem;
         text-align: center;
-        button {
+        a {
           opacity: 0;
           padding: 10px 20px;
+          font-size: 2rem;
+          background-color: none;
+          color: black;
+          text-decoration: none;
           animation: enter 2s ease-in-out normal both;
-          animation-delay: 20s;
+          animation-delay: 5s;
+          &:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 2px 2px 4px gray;
+            &:visited {
+              color: white;
+            }
+          }
+          &:visited {
+            color: black;
+            text-decoration: none;
+          }
         }
       }
     }
@@ -167,18 +197,6 @@ body {
       // display: none;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(
-        to right bottom,
-        #f9f871,
-        #e2b659,
-        #b87c4c,
-        #7f4d3e,
-        #412728,
-        #7f4d3e,
-        #b87c4c,
-        #e2b659,
-        #f9f871
-      );
       .wrapper {
         background: #171717;
         display: flex;
@@ -188,7 +206,7 @@ body {
         min-height: calc(100vh - 16px);
         min-width: calc(100% - 16px);
         &:hover {
-          button {
+          a {
             animation: enter 2s ease-in-out normal both;
             animation-delay: 5s;
           }
@@ -210,11 +228,13 @@ body {
         .skills1 {
           display: flex;
           justify-content: space-evenly;
+          color: transparent;
           font-size: 1.2rem;
           gap: 50%;
           i {
             &:hover {
               transform: scale(1.2);
+              color: white;
             }
           }
         }
@@ -222,73 +242,51 @@ body {
           opacity: 0;
           padding: 10px 20px;
         }
+        a {
+          opacity: 0;
+          padding: 10px 20px;
+          font-size: 2rem;
+          font-weight: bold;
+          background-color: none;
+          color: black;
+          text-decoration: none;
+          animation: enter 2s ease-in-out normal both;
+          animation-delay: 5s;
+          &:hover {
+            color: white;
+            box-shadow: 2px 2px 4px gray;
+            &:visited {
+              color: white;
+            }
+          }
+          &:visited {
+            color: black;
+            text-decoration: none;
+          }
+        }
       }
     }
     #projects {
       height: 100vh;
-      background: linear-gradient(
-        to bottom,
-        #f9f871,
-        #e2b659,
-        #b87c4c,
-        #7f4d3e,
-        #412728
-      );
+      background-color: black;
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
-
-      .slider {
-        width: 100%;
-        width: 80vw;
-        height: 70vh;
-        margin: 20px;
-        text-align: center;
-        border-radius: 20px;
-        overflow: hidden;
-        position: relative;
+      gap: 2rem;
+      .wrapper {
+        background-color: white;
+        width: calc(100vw - 16px);
+        height: calc(100vh - 16px);
+        display: grid;
       }
 
-      .slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
-        width: 80vw;
-        height: 80vh;
-        scroll-snap-align: center;
-        margin-right: 0px;
-        box-sizing: border-box;
-        background: white;
-        transform-origin: center center;
-        transform: scale(1);
-      }
-
-      .slider__nav {
-        box-sizing: border-box;
-        position: absolute;
-        bottom: 5%;
-        left: 50%;
-        width: 200px;
-        margin-left: -100px;
-        text-align: center;
-      }
-
-      .slider__navlink {
-        display: inline-block;
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        background-color: black;
-        margin: 0 10px 0 10px;
-      }
-      .tindog {
-        width: 80vw;
-        height: 80vh;
-        box-shadow: 5px 5px 20px 5px black;
-        border-radius: 40px;
-      }
+      // .tindog {
+      //   width: 40vh;
+      //   height: 80vh;
+      //   box-shadow: 5px 5px 20px 5px black;
+      //   border-radius: 40px;
+      // }
     }
   }
 }
