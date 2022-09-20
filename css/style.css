@@ -206,11 +206,14 @@ body main #skills .wrapper {
   min-height: calc(100vh - 16px);
   min-width: calc(100% - 16px);
 }
-body main #skills .wrapper:hover a {
+body main #skills .wrapper:hover .link {
   -webkit-animation: enter 2s ease-in-out normal both;
           animation: enter 2s ease-in-out normal both;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
+}
+body main #skills .wrapper .link {
+  opacity: 0;
 }
 body main #skills .wrapper h1 {
   padding: 0;
@@ -239,12 +242,11 @@ body main #skills .wrapper button {
   padding: 10px 20px;
 }
 body main #skills .wrapper a {
-  opacity: 0;
   padding: 10px 20px;
   font-size: 2rem;
   font-weight: bold;
   background-color: none;
-  color: black;
+  color: white;
   text-decoration: none;
   -webkit-animation: enter 2s ease-in-out normal both;
           animation: enter 2s ease-in-out normal both;
@@ -252,13 +254,14 @@ body main #skills .wrapper a {
           animation-delay: 5s;
 }
 body main #skills .wrapper a:hover {
-  color: white;
+  color: black;
+  background-color: white;
   box-shadow: 2px 2px 4px gray;
 }
 body main #skills .wrapper a:hover:visited {
   color: white;
 }
-body main #skills .wrapper a:visited {
+body main #skills .wrapper a:hover:visited {
   color: black;
   text-decoration: none;
 }

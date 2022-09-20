@@ -206,10 +206,13 @@ body {
         min-height: calc(100vh - 16px);
         min-width: calc(100% - 16px);
         &:hover {
-          a {
+          .link {
             animation: enter 2s ease-in-out normal both;
             animation-delay: 5s;
           }
+        }
+        .link {
+          opacity: 0;
         }
 
         h1 {
@@ -243,25 +246,25 @@ body {
           padding: 10px 20px;
         }
         a {
-          opacity: 0;
           padding: 10px 20px;
           font-size: 2rem;
           font-weight: bold;
           background-color: none;
-          color: black;
+          color: white;
           text-decoration: none;
           animation: enter 2s ease-in-out normal both;
           animation-delay: 5s;
           &:hover {
-            color: white;
+            color: black;
+            background-color: white;
             box-shadow: 2px 2px 4px gray;
             &:visited {
               color: white;
             }
-          }
-          &:visited {
-            color: black;
-            text-decoration: none;
+            &:visited {
+              color: black;
+              text-decoration: none;
+            }
           }
         }
       }
