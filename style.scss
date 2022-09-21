@@ -384,12 +384,14 @@ body {
           }
         }
         .link {
+          padding: 20px;
           a {
             opacity: 0;
             font-size: 2rem;
             background-color: none;
             color: black;
             text-decoration: none;
+            padding: 10px 20px;
             &:hover {
               background-color: black;
               color: white;
