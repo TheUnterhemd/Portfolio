@@ -266,9 +266,11 @@ body main #projects {
   position: relative;
   gap: 2rem;
 }
-body main #projects:hover a {
+body main #projects:hover .link a {
   -webkit-animation: enter 2s ease-in-out normal both;
           animation: enter 2s ease-in-out normal both;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 body main #projects .wrapper {
   background-color: white;
@@ -385,19 +387,19 @@ body main #projects .wrapper .img1:hover .item8 {
   -webkit-animation: right 2s ease-in-out normal both;
           animation: right 2s ease-in-out normal both;
 }
-body main #projects .wrapper a {
+body main #projects .wrapper .link a {
   opacity: 0;
   font-size: 2rem;
   background-color: none;
   color: black;
   text-decoration: none;
 }
-body main #projects .wrapper a:hover {
+body main #projects .wrapper .link a:hover {
   background-color: black;
   color: white;
   box-shadow: 2px 2px 4px gray;
 }
-body main #projects .wrapper a:hover:visited {
+body main #projects .wrapper .link a:hover:visited {
   color: white;
 }
 body main #contact {
