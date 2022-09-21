@@ -433,16 +433,17 @@ body {
         flex-direction: column;
         gap: 1rem;
         #comp,
-        #name {
-          height: 50px;
+        #name,
+        #tellme,
+        #mail {
           font-size: 1rem;
           text-align: center;
           font-weight: bold;
         }
-        #tellme {
-          font-size: 1rem;
-          text-align: center;
-          font-weight: bold;
+        #comp,
+        #name,
+        #mail {
+          height: 50px;
         }
       }
       footer {
@@ -461,6 +462,7 @@ body {
               color: white;
             }
             &:hover {
+              border-left: 3px solid white;
             }
           }
           list-style: none;

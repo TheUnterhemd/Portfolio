@@ -440,16 +440,17 @@ body main #contact .form {
   gap: 1rem;
 }
 body main #contact .form #comp,
-body main #contact .form #name {
-  height: 50px;
+body main #contact .form #name,
+body main #contact .form #tellme,
+body main #contact .form #mail {
   font-size: 1rem;
   text-align: center;
   font-weight: bold;
 }
-body main #contact .form #tellme {
-  font-size: 1rem;
-  text-align: center;
-  font-weight: bold;
+body main #contact .form #comp,
+body main #contact .form #name,
+body main #contact .form #mail {
+  height: 50px;
 }
 body main #contact footer {
   padding: 2%;
@@ -469,6 +470,9 @@ body main #contact footer ul a {
 }
 body main #contact footer ul a:visited {
   color: white;
+}
+body main #contact footer ul a:hover {
+  border-left: 3px solid white;
 }
 body main #contact footer ul li:nth-child(1) {
   font-size: 1.2em;
