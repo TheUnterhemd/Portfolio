@@ -271,11 +271,7 @@ body {
       align-items: center;
       position: relative;
       gap: 2rem;
-      &:hover {
-        a {
-          animation: enter 2s ease-in-out normal both;
-          animation-delay: 5s;
-        }
+      
       .wrapper {
         background-color: white;
         width: calc(100vw - 16px);
@@ -286,6 +282,11 @@ body {
         align-items: center;
         gap: 2rem;
         transition: 2s ease-in-out;
+        &:hover {
+          a {
+            animation: enter 2s ease-in-out normal both;
+            animation-delay: 5s;
+          }
         img {
           width: 150px;
           height: 150px;
