@@ -266,6 +266,10 @@ body main #projects {
   position: relative;
   gap: 2rem;
 }
+body main #projects:hover a {
+  -webkit-animation: enter 2s ease-in-out normal both;
+          animation: enter 2s ease-in-out normal both;
+}
 body main #projects .wrapper {
   background-color: white;
   width: calc(100vw - 16px);
@@ -277,17 +281,11 @@ body main #projects .wrapper {
   gap: 2rem;
   transition: 2s ease-in-out;
 }
-body main #projects .wrapper:hover a {
-  -webkit-animation: enter 2s ease-in-out normal both;
-          animation: enter 2s ease-in-out normal both;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-}
-body main #projects .wrapper:hover img {
+body main #projects .wrapper img {
   width: 150px;
   height: 150px;
 }
-body main #projects .wrapper:hover .img1 {
+body main #projects .wrapper .img1 {
   position: relative;
   width: 600px;
   height: 300px;
@@ -297,116 +295,112 @@ body main #projects .wrapper:hover .img1 {
   align-items: center;
   flex-wrap: wrap;
 }
-body main #projects .wrapper:hover .img1 h1 {
+body main #projects .wrapper .img1 h1 {
   position: absolute;
   top: 150px;
   font-size: 3rem;
   text-shadow: 2px 2px 5px gray;
   z-index: 5;
 }
-body main #projects .wrapper:hover .img1 .item {
+body main #projects .wrapper .img1 .item {
   position: absolute;
   opacity: 0;
   display: none;
 }
-body main #projects .wrapper:hover .img1 .item1 {
+body main #projects .wrapper .img1 .item1 {
   top: 0;
   left: -100%;
 }
-body main #projects .wrapper:hover .img1 .item2 {
+body main #projects .wrapper .img1 .item2 {
   bottom: 0;
   left: -100%;
 }
-body main #projects .wrapper:hover .img1 .item3 {
+body main #projects .wrapper .img1 .item3 {
   top: -100%;
   left: 150px;
 }
-body main #projects .wrapper:hover .img1 .item4 {
+body main #projects .wrapper .img1 .item4 {
   bottom: -100%;
   left: 150px;
 }
-body main #projects .wrapper:hover .img1 .item5 {
+body main #projects .wrapper .img1 .item5 {
   top: -100%;
   left: 300px;
 }
-body main #projects .wrapper:hover .img1 .item6 {
+body main #projects .wrapper .img1 .item6 {
   bottom: -100%;
   left: 300px;
 }
-body main #projects .wrapper:hover .img1 .item7 {
+body main #projects .wrapper .img1 .item7 {
   top: 0;
   right: -100%;
 }
-body main #projects .wrapper:hover .img1 .item8 {
+body main #projects .wrapper .img1 .item8 {
   bottom: 0;
   right: -100%;
 }
-body main #projects .wrapper:hover .img1:hover h1 {
+body main #projects .wrapper .img1:hover h1 {
   opacity: 0;
 }
-body main #projects .wrapper:hover .img1:hover .item {
+body main #projects .wrapper .img1:hover .item {
   display: flex;
 }
-body main #projects .wrapper:hover .img1:hover .item1 {
+body main #projects .wrapper .img1:hover .item1 {
   -webkit-animation: left 2s ease-in-out normal both;
           animation: left 2s ease-in-out normal both;
 }
-body main #projects .wrapper:hover .img1:hover .item2 {
+body main #projects .wrapper .img1:hover .item2 {
   -webkit-animation: left 2s ease-in-out normal both;
           animation: left 2s ease-in-out normal both;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
-body main #projects .wrapper:hover .img1:hover .item3 {
+body main #projects .wrapper .img1:hover .item3 {
   -webkit-animation: top 2s ease-in-out normal both;
           animation: top 2s ease-in-out normal both;
 }
-body main #projects .wrapper:hover .img1:hover .item4 {
+body main #projects .wrapper .img1:hover .item4 {
   -webkit-animation: bottom 2s ease-in-out normal both;
           animation: bottom 2s ease-in-out normal both;
 }
-body main #projects .wrapper:hover .img1:hover .item5 {
+body main #projects .wrapper .img1:hover .item5 {
   -webkit-animation: top 2s ease-in-out normal both;
           animation: top 2s ease-in-out normal both;
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
-body main #projects .wrapper:hover .img1:hover .item6 {
+body main #projects .wrapper .img1:hover .item6 {
   -webkit-animation: bottom 2s ease-in-out normal both;
           animation: bottom 2s ease-in-out normal both;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
-body main #projects .wrapper:hover .img1:hover .item7 {
+body main #projects .wrapper .img1:hover .item7 {
   -webkit-animation: right 2s ease-in-out normal both;
           animation: right 2s ease-in-out normal both;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
-body main #projects .wrapper:hover .img1:hover .item8 {
+body main #projects .wrapper .img1:hover .item8 {
   -webkit-animation: right 2s ease-in-out normal both;
           animation: right 2s ease-in-out normal both;
 }
-body main #projects .wrapper:hover a {
+body main #projects .wrapper a {
   opacity: 0;
   font-size: 2rem;
   background-color: none;
   color: black;
   text-decoration: none;
 }
-body main #projects .wrapper:hover a:hover {
+body main #projects .wrapper a:hover {
   background-color: black;
   color: white;
   box-shadow: 2px 2px 4px gray;
 }
-body main #projects .wrapper:hover a:hover:visited {
+body main #projects .wrapper a:hover:visited {
   color: white;
 }
-body main #projects .wrapper:hover a:visited {
-  color: black;
-  text-decoration: none;
-}
-body main #projects #contact {
+body main #contact {
   height: 100vh;
   background-color: black;
   color: white;
@@ -415,73 +409,73 @@ body main #projects #contact {
   align-items: center;
   justify-content: space-between;
 }
-body main #projects #contact .resume {
+body main #contact .resume {
   width: 60vw;
   padding: 2%;
   padding-top: 10%;
 }
-body main #projects #contact .resume p {
+body main #contact .resume p {
   margin-bottom: 2%;
 }
-body main #projects #contact .resume .so {
+body main #contact .resume .so {
   font-size: 3rem;
   font-weight: bolder;
   margin: 5px;
 }
-body main #projects #contact .resume .upper {
+body main #contact .resume .upper {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.2em;
 }
-body main #projects #contact .resume .biggest {
+body main #contact .resume .biggest {
   font-size: 3rem;
 }
-body main #projects #contact .form {
+body main #contact .form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-body main #projects #contact .form #comp,
-body main #projects #contact .form #name,
-body main #projects #contact .form #tellme,
-body main #projects #contact .form #mail {
+body main #contact .form #comp,
+body main #contact .form #name,
+body main #contact .form #tellme,
+body main #contact .form #mail {
   font-size: 1rem;
   text-align: center;
   font-weight: bold;
 }
-body main #projects #contact .form #comp,
-body main #projects #contact .form #name,
-body main #projects #contact .form #mail {
+body main #contact .form #comp,
+body main #contact .form #name,
+body main #contact .form #mail {
   height: 50px;
 }
-body main #projects #contact footer {
+body main #contact footer {
   padding: 2%;
   width: 100vw;
   display: flex;
   justify-content: space-between;
 }
-body main #projects #contact footer ul {
+body main #contact footer ul {
   list-style: none;
 }
-body main #projects #contact footer ul li {
+body main #contact footer ul li {
   margin-bottom: 5px;
 }
-body main #projects #contact footer ul a {
+body main #contact footer ul a {
   text-decoration: none;
   color: white;
 }
-body main #projects #contact footer ul a:visited {
+body main #contact footer ul a:visited {
   color: white;
 }
-body main #projects #contact footer ul a:hover {
+body main #contact footer ul a:hover {
   border-left: 3px solid white;
 }
-body main #projects #contact footer ul li:nth-child(1) {
+body main #contact footer ul li:nth-child(1) {
   font-size: 1.2em;
   border-bottom: 3px solid white;
   margin-bottom: 5px;
 }
-body main #projects #contact footer .copy {
+body main #contact footer .copy {
   display: flex;
   align-items: flex-end;
 }
