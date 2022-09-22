@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,9 +20,26 @@ body header {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  overflow: hidden;
 }
-body header .intro span {
+body header .mobile {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  display: none;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  width: 30%;
+  rotate: -30deg;
+}
+body header .mobile i {
+  font-size: 8rem;
+  color: #f9f871;
+}
+body header .intro .type {
   font-size: 5.5rem;
   position: relative;
   top: 50%;
@@ -31,9 +50,8 @@ body header .intro span {
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
-  animation: typewriter 4s steps(25) 1s 1 normal both, blinkTextCursor 500ms steps(25) infinite normal;
   -webkit-animation: typewriter 4s steps(25) 1s 1 normal both, blinkTextCursor 500ms steps(25) infinite normal;
-  -moz-animation: typewriter1 4s steps(25) 1s 1 normal both !important, blinkTextCursor 500ms steps(25) infinite normal !important;
+          animation: typewriter 4s steps(25) 1s 1 normal both, blinkTextCursor 500ms steps(25) infinite normal;
 }
 body header a {
   opacity: 0;
@@ -494,7 +512,7 @@ body main #contact footer .copy {
     width: 0;
   }
   to {
-    width: 10.6em;
+    width: 10.5em;
   }
 }
 
@@ -503,7 +521,17 @@ body main #contact footer .copy {
     width: 0;
   }
   to {
-    width: 10.6em;
+    width: 10.5em;
+  }
+}
+@-moz-document url-prefix() {
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 12.5em;
+    }
   }
 }
 @-webkit-keyframes blinkTextCursor {
@@ -584,7 +612,25 @@ body main #contact footer .copy {
   body {
     overflow-y: auto;
   }
-  body header .intro h1 {
+  body header .mobile {
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    width: 40%;
+    rotate: -25deg;
+  }
+  body header .mobile i {
+    font-size: 6rem;
+    color: #f9f871;
+  }
+  body header .intro span {
     width: 100%;
     font-size: 1.8em;
   }
@@ -659,7 +705,25 @@ body main #projects .wrapper .img1 .item6 {
   body {
     overflow-y: auto;
   }
-  body header .intro h1 {
+  body header .mobile {
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    width: 30%;
+    rotate: -25deg;
+  }
+  body header .mobile i {
+    font-size: 8rem;
+    color: #f9f871;
+  }
+  body header .intro span {
     width: 100%;
     font-size: 3em;
   }

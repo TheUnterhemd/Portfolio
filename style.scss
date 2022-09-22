@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,9 +20,26 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    overflow: hidden;
+    .mobile {
+      position: absolute;
+      top: 15%;
+      left: 5%;
+      border: 2px solid white;
+      border-radius: 20px;
+      padding: 10px;
+      display: none;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.2rem;
+      width: 30%;
+      rotate: -30deg;
+      i {
+        font-size: 8rem;
+        color: #f9f871;
+      }
+    }
     .intro {
-      span {
+      .type {
         font-size: 5.5rem;
         position: relative;
         top: 50%;
@@ -33,10 +52,6 @@ body {
         transform: translateY(-50%);
         animation: typewriter 4s steps(25) 1s 1 normal both,
           blinkTextCursor 500ms steps(25) infinite normal;
-        -webkit-animation: typewriter 4s steps(25) 1s 1 normal both,
-          blinkTextCursor 500ms steps(25) infinite normal;
-        -moz-animation: typewriter1 4s steps(25) 1s 1 normal both !important,
-          blinkTextCursor 500ms steps(25) infinite normal !important;
       }
     }
     a {
@@ -498,7 +513,17 @@ body {
     width: 0;
   }
   to {
-    width: 10.6em;
+    width: 10.5em;
+  }
+}
+@-moz-document url-prefix() {
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 12.5em;
+    }
   }
 }
 @keyframes blinkTextCursor {
@@ -554,8 +579,26 @@ body {
   body {
     overflow-y: auto;
     header {
+      .mobile {
+        position: absolute;
+        top: 5%;
+        left: 8%;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+        width: 40%;
+        rotate: -25deg;
+        i {
+          font-size: 6rem;
+          color: #f9f871;
+        }
+      }
       .intro {
-        h1 {
+        span {
           width: 100%;
           font-size: 1.8em;
         }
@@ -653,8 +696,26 @@ body {
   body {
     overflow-y: auto;
     header {
+      .mobile {
+        position: absolute;
+        top: 5%;
+        left: 8%;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.2rem;
+        width: 30%;
+        rotate: -25deg;
+        i {
+          font-size: 8rem;
+          color: #f9f871;
+        }
+      }
       .intro {
-        h1 {
+        span {
           width: 100%;
           font-size: 3em;
         }
