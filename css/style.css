@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   transition: 2s ease-in-out;
 }
 body header {
@@ -21,7 +21,7 @@ body header {
   overflow: hidden;
 }
 body header .intro h1 {
-  font-size: 5rem;
+  font-size: 5.5rem;
   position: relative;
   top: 50%;
   width: 24em;
@@ -31,8 +31,9 @@ body header .intro h1 {
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
+  animation: typewriter 4s steps(25) 1s 1 normal both, blinkTextCursor 500ms steps(25) infinite normal;
   -webkit-animation: typewriter 4s steps(25) 1s 1 normal both, blinkTextCursor 500ms steps(25) infinite normal;
-          animation: typewriter 4s steps(25) 1s 1 normal both, blinkTextCursor 500ms steps(25) infinite normal;
+  -moz-animation: typewriter 4s steps(25) 1s 1 normal both, blinkTextCursor 500ms steps(25) infinite normal;
 }
 body header a {
   opacity: 0;
@@ -163,7 +164,7 @@ body main #search .item11:hover {
   opacity: 1;
 }
 body main #search .item12 {
-  grid-area: 12/6/13/8;
+  grid-area: 12/5/13/9;
   font-size: 2rem;
   text-align: center;
 }
@@ -209,7 +210,7 @@ body main #skills .wrapper .link {
 }
 body main #skills .wrapper h1 {
   padding: 0;
-  font-size: 10rem;
+  font-size: 12rem;
   text-transform: uppercase;
   position: relative;
   color: #171717;
@@ -273,6 +274,7 @@ body main #projects:hover .link a {
           animation-delay: 5s;
 }
 body main #projects .wrapper {
+  padding: 20px 0;
   background-color: white;
   width: calc(100vw - 16px);
   height: calc(100vh - 16px);
@@ -280,7 +282,6 @@ body main #projects .wrapper {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  gap: 2rem;
   transition: 2s ease-in-out;
 }
 body main #projects .wrapper img {
@@ -416,12 +417,12 @@ body main #contact {
   justify-content: space-between;
 }
 body main #contact .resume {
-  width: 60vw;
+  width: 80%;
   padding: 2%;
-  padding-top: 10%;
 }
 body main #contact .resume p {
   margin-bottom: 2%;
+  font-size: 1.5;
 }
 body main #contact .resume .so {
   font-size: 3rem;
@@ -431,10 +432,12 @@ body main #contact .resume .so {
 body main #contact .resume .upper {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 2em;
+  color: #b87c4c;
 }
 body main #contact .resume .biggest {
-  font-size: 3rem;
+  font-size: 4rem;
+  color: #f9f871;
 }
 body main #contact .form {
   display: flex;
@@ -575,5 +578,154 @@ body main #contact footer .copy {
   to {
     bottom: 0;
     opacity: 1;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    overflow-y: auto;
+  }
+  body header .intro h1 {
+    width: 100%;
+    font-size: 1.8em;
+  }
+  body header .intro a {
+    font-size: 1.5rem;
+  }
+  body main #search .item,
+body main #search .item2 {
+    font-size: 1.5em;
+  }
+  body main #search .item12 {
+    grid-area: 12/1/13/-1;
+  }
+  body main #search .item12 a {
+    font-size: 1.5em;
+  }
+  body main #skills .wrapper .skills1 {
+    flex-direction: column;
+  }
+  body main #skills .wrapper .skills1 i {
+    font-size: 5em;
+  }
+  body main #skills .wrapper .headline h1 {
+    font-size: 5em;
+  }
+  body main #skills .wrapper .link a {
+    font-size: 2em !important;
+    padding: 0;
+  }
+  body main #projects .wrapper .img1 {
+    width: 200px;
+    height: 100px;
+  }
+  body main #projects .wrapper .img1:hover h1 {
+    display: none;
+  }
+  body main #projects .wrapper .img1 h1 {
+    font-size: 1.5em;
+    top: 30%;
+  }
+  body main #projects .wrapper .img1 img {
+    width: 50px;
+    height: 50px;
+  }
+  body main #projects .wrapper .img1 .item3,
+body main #projects .wrapper .img1 .item4 {
+    left: 50px;
+  }
+  body main #projects .wrapper .img1 .item5,
+body main #projects .wrapper .img1 .item6 {
+    left: 100px;
+  }
+  body main #contact .resume {
+    width: 80%;
+  }
+  body main #contact .resume .upper {
+    font-size: 1.2rem;
+    color: #b87c4c;
+  }
+  body main #contact .resume .biggest {
+    font-size: 2rem;
+    color: #f9f871;
+  }
+  body main #contact footer {
+    padding: 0 20px;
+  }
+  body main #contact footer .copy {
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+  body {
+    overflow-y: auto;
+  }
+  body header .intro h1 {
+    width: 100%;
+    font-size: 3em;
+  }
+  body header .intro a {
+    font-size: 1.5rem;
+  }
+  body main #search .item2 {
+    font-size: 3em;
+  }
+  body main #search .item {
+    font-size: 1.5em;
+  }
+  body main #search .item12 {
+    grid-area: 12/1/13/-1;
+  }
+  body main #search .item12 a {
+    font-size: 1.5em;
+  }
+  body main #skills .wrapper .skills1 {
+    gap: 25%;
+  }
+  body main #skills .wrapper .skills1 i {
+    font-size: 5em;
+  }
+  body main #skills .wrapper .headline h1 {
+    font-size: 9em;
+  }
+  body main #skills .wrapper .link a {
+    font-size: 2em !important;
+    padding: 0;
+  }
+  body main #projects .wrapper .img1 {
+    width: 400px;
+    height: 200px;
+  }
+  body main #projects .wrapper .img1:hover h1 {
+    display: none;
+  }
+  body main #projects .wrapper .img1 h1 {
+    font-size: 1.5em;
+    top: 30%;
+  }
+  body main #projects .wrapper .img1 img {
+    width: 100px;
+    height: 100px;
+  }
+  body main #projects .wrapper .img1 .item3,
+body main #projects .wrapper .img1 .item4 {
+    left: 100px;
+  }
+  body main #projects .wrapper .img1 .item5,
+body main #projects .wrapper .img1 .item6 {
+    left: 200px;
+  }
+  body main #contact .resume {
+    width: 80%;
+  }
+  body main #contact .resume .upper {
+    font-size: 1.2rem;
+    color: #b87c4c;
+  }
+  body main #contact .resume .biggest {
+    font-size: 3rem;
+    color: #f9f871;
+  }
+  body main #contact footer {
+    padding: 0 20px;
   }
 }/*# sourceMappingURL=style.css.map */
