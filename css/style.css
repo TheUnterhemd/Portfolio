@@ -630,7 +630,7 @@ body main #contact footer .copy {
     font-size: 6rem;
     color: #f9f871;
   }
-  body header .intro span {
+  body header .intro .type {
     width: 100%;
     font-size: 1.8em;
   }
@@ -723,7 +723,7 @@ body main #projects .wrapper .img1 .item6 {
     font-size: 8rem;
     color: #f9f871;
   }
-  body header .intro span {
+  body header .intro .type {
     width: 100%;
     font-size: 3em;
   }
