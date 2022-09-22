@@ -20,7 +20,7 @@ body {
     gap: 5rem;
     overflow: hidden;
     .intro {
-      h1 {
+      span {
         font-size: 5.5rem;
         position: relative;
         top: 50%;
@@ -35,8 +35,8 @@ body {
           blinkTextCursor 500ms steps(25) infinite normal;
         -webkit-animation: typewriter 4s steps(25) 1s 1 normal both,
           blinkTextCursor 500ms steps(25) infinite normal;
-        -moz-animation: typewriter 4s steps(25) 1s 1 normal both,
-          blinkTextCursor 500ms steps(25) infinite normal;
+        -moz-animation: typewriter1 4s steps(25) 1s 1 normal both !important,
+          blinkTextCursor 500ms steps(25) infinite normal !important;
       }
     }
     a {
@@ -492,6 +492,7 @@ body {
     }
   }
 }
+
 @keyframes typewriter {
   from {
     width: 0;
@@ -547,32 +548,6 @@ body {
     opacity: 1;
   }
 }
-//MOZILLA TESTINGS but they don't work
-
-// @-moz-document url-prefix() {
-//   #contact {
-//     .resume {
-//       padding-top: 0;
-//     }
-//   }
-// }
-// @-moz-keyframes blinkTextCursor {
-//   from {
-//     border-right-color: rgba(255, 255, 255, 0.75);
-//   }
-//   to {
-//     border-right-color: transparent;
-//   }
-// }
-// @-moz-keyframes typewriter {
-//   from {
-//     width: 0;
-//   }
-//   to {
-//     width: 16em;
-//   }
-// }
-
 // MEDIAS Mobile
 
 @media screen and (max-width: 576px) {

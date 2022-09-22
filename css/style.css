@@ -20,7 +20,7 @@ body header {
   gap: 5rem;
   overflow: hidden;
 }
-body header .intro h1 {
+body header .intro span {
   font-size: 5.5rem;
   position: relative;
   top: 50%;
@@ -33,7 +33,7 @@ body header .intro h1 {
   transform: translateY(-50%);
   animation: typewriter 4s steps(25) 1s 1 normal both, blinkTextCursor 500ms steps(25) infinite normal;
   -webkit-animation: typewriter 4s steps(25) 1s 1 normal both, blinkTextCursor 500ms steps(25) infinite normal;
-  -moz-animation: typewriter 4s steps(25) 1s 1 normal both, blinkTextCursor 500ms steps(25) infinite normal;
+  -moz-animation: typewriter1 4s steps(25) 1s 1 normal both !important, blinkTextCursor 500ms steps(25) infinite normal !important;
 }
 body header a {
   opacity: 0;
