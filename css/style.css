@@ -683,6 +683,9 @@ body main #projects .wrapper .img1 .item4 {
 body main #projects .wrapper .img1 .item6 {
     left: 100px;
   }
+  body main #contact {
+    height: auto;
+  }
   body main #contact .resume {
     width: 80%;
   }
@@ -779,6 +782,7 @@ body main #projects .wrapper .img1 .item6 {
     left: 200px;
   }
   body main #contact .resume {
+    height: auto;
     width: 80%;
   }
   body main #contact .resume .upper {
